@@ -1,0 +1,10 @@
+
+<h2><%= @header %></h2>
+
+<% @videos.each do |video| %>
+	<div id="videos"><li><a href="/<%= video['title'] %>"><%= video['title'] %></a></li>
+	<button class="delete">Delete</button><div>
+<% end %>
+
+<button><a href="/add_video">Add new video</button>
+
